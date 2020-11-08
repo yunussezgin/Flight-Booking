@@ -18,6 +18,9 @@ public class Ticket {
     @Column(name = "id")
     private Long id;
     
+    @Column(name="active")
+    private int active;
+    
     @Column(name="number")
     private String number;
     
@@ -30,11 +33,8 @@ public class Ticket {
     @Column(name="card_number")
     private String cardNumber;
     
-    @Column(name="active")
-    private int active;
-    
     @ManyToOne
-	@JoinColumn(name = "flight_id", nullable = false)
+	@JoinColumn(name = "flight_id")
     private Flight flight;
 
 	public Long getId() {

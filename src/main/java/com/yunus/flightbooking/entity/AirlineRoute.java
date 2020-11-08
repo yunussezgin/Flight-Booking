@@ -5,6 +5,7 @@ import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -23,18 +24,18 @@ public class AirlineRoute {
 	private Long id;
 
 	@ManyToOne
-	@JoinColumn(name = "airline_company_id", nullable = false)
+	@JoinColumn(name = "airline_company_id")
 	private AirlineCompany airlineCompany;
 
 	@ManyToOne
-	@JoinColumn(name = "from_airport_id", nullable = false)
+	@JoinColumn(name = "from_airport_id")
 	private Airport from_airport;
 
 	@ManyToOne
-	@JoinColumn(name = "to_airport_id", nullable = false)
+	@JoinColumn(name = "to_airport_id")
 	private Airport to_airport;
 
-	@OneToMany(mappedBy = "airlineRoute", cascade = CascadeType.ALL)
+	@OneToMany
 	private Set<Flight> flight;
 
 	public Long getId() {

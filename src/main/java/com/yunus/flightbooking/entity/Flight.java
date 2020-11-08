@@ -32,7 +32,7 @@ public class Flight {
 	@JoinColumn(name = "airline_route_id")
 	private AirlineRoute airlineRoute;
 
-	@OneToMany(mappedBy = "flight", cascade = CascadeType.ALL)
+	@OneToMany
 	private Set<Ticket> ticket;
 
 	public Long getId() {

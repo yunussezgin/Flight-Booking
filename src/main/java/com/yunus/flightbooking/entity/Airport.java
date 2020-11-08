@@ -23,10 +23,10 @@ public class Airport {
     @Column(name = "location")
     private String location;
     
-    @OneToMany(mappedBy = "from_airport", cascade = CascadeType.ALL)
+    @OneToMany
     private Set<AirlineRoute> fromAirlineRoute;
     
-    @OneToMany(mappedBy = "to_airport", cascade = CascadeType.ALL)
+    @OneToMany
     private Set<AirlineRoute> toAirlineRoute;
 
 	public Long getId() {

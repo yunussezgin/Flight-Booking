@@ -24,7 +24,7 @@ public class AirlineCompany {
 	@Column(name = "name")
 	private String name;
 
-	@OneToMany(mappedBy = "airlineCompany", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@OneToMany
 	private Set<AirlineRoute> airlineRoutes;
 
 	public Long getId() {
