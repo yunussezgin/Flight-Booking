@@ -1,6 +1,5 @@
 package com.yunus.flightbooking.entity;
 
-import java.util.Date;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -23,18 +22,15 @@ public class Flight {
 	@Column(name = "id")
 	private Long id;
 
-	@ManyToOne
-	@JoinColumn(name = "airline_route_id")
-	private AirlineRoute airlineRoute;
-
 	@Column(name = "ticket_count")
 	private int ticketCount;
 
 	@Column(name = "ticket_price")
 	private Double ticketPrice;
-
-	@Column(name = "leave_date")
-	private Date leaveDate;
+	
+	@ManyToOne
+	@JoinColumn(name = "airline_route_id")
+	private AirlineRoute airlineRoute;
 
 	@OneToMany(mappedBy = "flight", cascade = CascadeType.ALL)
 	private Set<Ticket> ticket;
@@ -71,14 +67,6 @@ public class Flight {
 		this.ticketPrice = ticketPrice;
 	}
 
-	public Date getLeaveDate() {
-		return leaveDate;
-	}
-
-	public void setLeaveDate(Date leaveDate) {
-		this.leaveDate = leaveDate;
-	}
-
 	public Set<Ticket> getTicket() {
 		return ticket;
 	}
@@ -90,7 +78,7 @@ public class Flight {
 	@Override
 	public String toString() {
 		return "Flight [id=" + id + ", airlineRoute=" + airlineRoute + ", ticketCount=" + ticketCount + ", ticketPrice="
-				+ ticketPrice + ", leaveDate=" + leaveDate + ", ticket=" + ticket + "]";
+				+ ticketPrice + ", ticket=" + ticket + "]";
 	}
-	
+
 }
