@@ -35,7 +35,7 @@ public class AirlineCompanyController {
 	}
 
 	@PostMapping("/airlinecompanies")
-	public void createAilrlineCompany(@RequestBody AirlineCompany airlineCompany) {
+	public void createAirlineCompany(@RequestBody AirlineCompany airlineCompany) {
 		airlineCompanyRepository.save(airlineCompany);
 	}
 }

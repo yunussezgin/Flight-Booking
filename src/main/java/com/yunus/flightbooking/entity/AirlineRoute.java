@@ -2,10 +2,8 @@ package com.yunus.flightbooking.entity;
 
 import java.util.Set;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -29,11 +27,11 @@ public class AirlineRoute {
 
 	@ManyToOne
 	@JoinColumn(name = "from_airport_id")
-	private Airport from_airport;
+	private Airport fromAirport;
 
 	@ManyToOne
 	@JoinColumn(name = "to_airport_id")
-	private Airport to_airport;
+	private Airport toAirport;
 
 	@OneToMany
 	private Set<Flight> flight;
@@ -54,20 +52,20 @@ public class AirlineRoute {
 		this.airlineCompany = airlineCompany;
 	}
 
-	public Airport getFrom_airport() {
-		return from_airport;
+	public Airport getFromAirport() {
+		return fromAirport;
 	}
 
-	public void setFrom_airport(Airport from_airport) {
-		this.from_airport = from_airport;
+	public void setFromAirport(Airport fromAirport) {
+		this.fromAirport = fromAirport;
 	}
 
-	public Airport getTo_airport() {
-		return to_airport;
+	public Airport getToAirport() {
+		return toAirport;
 	}
 
-	public void setTo_airport(Airport to_airport) {
-		this.to_airport = to_airport;
+	public void setToAirport(Airport toAirport) {
+		this.toAirport = toAirport;
 	}
 
 	public Set<Flight> getFlight() {
@@ -80,8 +78,8 @@ public class AirlineRoute {
 
 	@Override
 	public String toString() {
-		return "AirlineRoute [id=" + id + ", airlineCompany=" + airlineCompany + ", from_airport=" + from_airport
-				+ ", to_airport=" + to_airport + ", flight=" + flight + "]";
+		return "AirlineRoute [id=" + id + ", airlineCompany=" + airlineCompany + ", fromAirport=" + fromAirport
+				+ ", toAirport=" + toAirport + ", flight=" + flight + "]";
 	}
 
 }

@@ -18,9 +18,6 @@ public class Ticket {
     @Column(name = "id")
     private Long id;
     
-    @Column(name="active")
-    private int active;
-    
     @Column(name="number")
     private String number;
     
@@ -77,14 +74,6 @@ public class Ticket {
 		this.cardNumber = cardNumber;
 	}
 
-	public int getActive() {
-		return active;
-	}
-
-	public void setActive(int active) {
-		this.active = active;
-	}
-
 	public Flight getFlight() {
 		return flight;
 	}
@@ -96,7 +85,7 @@ public class Ticket {
 	@Override
 	public String toString() {
 		return "Ticket [id=" + id + ", number=" + number + ", passangerName=" + passangerName + ", passangerSurname="
-				+ passangerSurname + ", cardNumber=" + cardNumber + ", active=" + active + ", flight=" + flight + "]";
+				+ passangerSurname + ", cardNumber=" + cardNumber + ", flight=" + flight + "]";
 	}
 
 }

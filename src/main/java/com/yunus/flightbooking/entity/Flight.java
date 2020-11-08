@@ -2,7 +2,6 @@ package com.yunus.flightbooking.entity;
 
 import java.util.Set;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -27,7 +26,7 @@ public class Flight {
 
 	@Column(name = "ticket_price")
 	private Double ticketPrice;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "airline_route_id")
 	private AirlineRoute airlineRoute;

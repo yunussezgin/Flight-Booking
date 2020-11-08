@@ -2,7 +2,6 @@ package com.yunus.flightbooking.entity;
 
 import java.util.Set;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,19 +14,19 @@ import javax.persistence.Table;
 @Table(name = "airport")
 public class Airport {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Long id;
-    
-    @Column(name = "location")
-    private String location;
-    
-    @OneToMany
-    private Set<AirlineRoute> fromAirlineRoute;
-    
-    @OneToMany
-    private Set<AirlineRoute> toAirlineRoute;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
+	private Long id;
+
+	@Column(name = "location")
+	private String location;
+
+	@OneToMany
+	private Set<AirlineRoute> fromAirlineRoute;
+
+	@OneToMany
+	private Set<AirlineRoute> toAirlineRoute;
 
 	public Long getId() {
 		return id;
@@ -66,5 +65,5 @@ public class Airport {
 		return "Airport [id=" + id + ", location=" + location + ", fromAirlineRoute=" + fromAirlineRoute
 				+ ", toAirlineRoute=" + toAirlineRoute + "]";
 	}
-    
+
 }
