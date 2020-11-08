@@ -34,7 +34,69 @@ public class Ticket {
     private int active;
     
     @ManyToOne
-	@JoinColumn(name = "flight_id")
+	@JoinColumn(name = "flight_id", nullable = false)
     private Flight flight;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getNumber() {
+		return number;
+	}
+
+	public void setNumber(String number) {
+		this.number = number;
+	}
+
+	public String getPassangerName() {
+		return passangerName;
+	}
+
+	public void setPassangerName(String passangerName) {
+		this.passangerName = passangerName;
+	}
+
+	public String getPassangerSurname() {
+		return passangerSurname;
+	}
+
+	public void setPassangerSurname(String passangerSurname) {
+		this.passangerSurname = passangerSurname;
+	}
+
+	public String getCardNumber() {
+		return cardNumber;
+	}
+
+	public void setCardNumber(String cardNumber) {
+		this.cardNumber = cardNumber;
+	}
+
+	public int getActive() {
+		return active;
+	}
+
+	public void setActive(int active) {
+		this.active = active;
+	}
+
+	public Flight getFlight() {
+		return flight;
+	}
+
+	public void setFlight(Flight flight) {
+		this.flight = flight;
+	}
+
+	@Override
+	public String toString() {
+		return "Ticket [id=" + id + ", number=" + number + ", passangerName=" + passangerName + ", passangerSurname="
+				+ passangerSurname + ", cardNumber=" + cardNumber + ", active=" + active + ", flight=" + flight + "]";
+	}
 
 }

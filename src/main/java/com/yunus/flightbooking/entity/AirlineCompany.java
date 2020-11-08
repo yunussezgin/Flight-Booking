@@ -1,8 +1,8 @@
 package com.yunus.flightbooking.entity;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -23,7 +23,36 @@ public class AirlineCompany {
 	@Column(name = "name")
 	private String name;
 
-	@OneToMany(mappedBy = "airline_company")
-	private List<AirlineRoute> airlineRoutes = new ArrayList<>();
+	@OneToMany(mappedBy = "airlineCompany", cascade = CascadeType.ALL)
+	private Set<AirlineRoute> airlineRoutes;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Set<AirlineRoute> getAirlineRoutes() {
+		return airlineRoutes;
+	}
+
+	public void setAirlineRoutes(Set<AirlineRoute> airlineRoutes) {
+		this.airlineRoutes = airlineRoutes;
+	}
+
+	@Override
+	public String toString() {
+		return "AirlineCompany [id=" + id + ", name=" + name + ", airlineRoutes=" + airlineRoutes + "]";
+	}
 
 }
