@@ -1,8 +1,11 @@
 ## Flight Booking
 
-#### Service Postman Collection: https://www.postman.com/collections/82058ae5aacb40eae707
+#### Service Postman Collection: https://www.getpostman.com/collections/82058ae5aacb40eae707
 
-Yukarıdaki link ile Postman'a resquest ve responselar import edilebilir.
+Yukarıdaki link ile Postman'a resquest ve response import edilebilir.
+
+### Test Results
+![image](hhttps://github.com/yunussezgin/flight-booking/blob/master/src/main/resources/postman_collections.JPG?raw=true)
 
 #### Postman Request Detayları:
 1. airlinecompanies_create -> Havayolu şirketi ekler.
