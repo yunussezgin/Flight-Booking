@@ -5,7 +5,7 @@
 Yukarıdaki link ile Postman'a resquest ve response import edilebilir.
 
 ### Test Results
-![image](hhttps://github.com/yunussezgin/flight-booking/blob/master/src/main/resources/postman_collections.JPG?raw=true)
+![image](https://github.com/yunussezgin/flight-booking/blob/master/src/main/resources/postman_collections.JPG?raw=true)
 
 #### Postman Request Detayları:
 1. airlinecompanies_create -> Havayolu şirketi ekler.
