@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.yunus.flightbooking.dao.TicketRepository;
 import com.yunus.flightbooking.entity.Ticket;
+import com.yunus.flightbooking.util.Utility;
 
 @RestController
 public class TicketController {
@@ -37,6 +38,7 @@ public class TicketController {
 
 	@PostMapping("/tickets")
 	public void createTicket(@RequestBody Ticket ticket) {
+		ticket.setCardNumber(Utility.maskText(ticket.getCardNumber().replaceAll("\\D+", ""), 6, 12, '*'));
 		ticketRepository.save(ticket);
 	}
 
