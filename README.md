@@ -4,7 +4,7 @@ Technologies: Java 8 and Spring Boot 2.3.5
 
 #### Service Postman Collection: https://www.getpostman.com/collections/82058ae5aacb40eae707
 
-Yukarıdaki link ile Postman'a resquest ve response import edilebilir.
+Yukarıdaki link ile Postman'a servis resquest'leri import edilebilir.
 
 ### Postman
 ![image](https://github.com/yunussezgin/flight-booking/blob/master/src/main/resources/postman_collections.JPG?raw=true)
