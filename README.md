@@ -9,7 +9,7 @@ Yukarıdaki link ile Postman'a resquest ve response import edilebilir.
 ### Postman
 ![image](https://github.com/yunussezgin/flight-booking/blob/master/src/main/resources/postman_collections.JPG?raw=true)
 
-#### Postman Request Detayları:
+#### Postman Service Request Detayları:
 1. airlinecompanies_create -> Havayolu şirketi ekler.
 2. airlinecompanies_retrieveAllAirlineCompanies -> Havayolu şirketi sorgular.
 3. airlinecompanies_retrieveAirlineCompanyByName -> Şirket ismine göre havayolu şirketi sorgular.
