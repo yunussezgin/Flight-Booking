@@ -4,7 +4,7 @@
 
 Yukarıdaki link ile Postman'a resquest ve response import edilebilir.
 
-### Test Results
+### Postman
 ![image](https://github.com/yunussezgin/flight-booking/blob/master/src/main/resources/postman_collections.JPG?raw=true)
 
 #### Postman Request Detayları:
@@ -19,4 +19,7 @@ Yukarıdaki link ile Postman'a resquest ve response import edilebilir.
 Technologies: Java 8 and Spring Boot 2.3.5
 
 
-#### Servis Detayları:
+### Test Data (H2 Database uygulama başladığında aşağıdaki temp data ile dolar.)
+![image](https://github.com/yunussezgin/flight-booking/blob/master/src/main/resources/postman_collections.JPG?raw=true)
+
+
