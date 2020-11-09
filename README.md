@@ -5,7 +5,13 @@
 Yukarıdaki link ile Postman'a resquest ve responselar import edilebilir.
 
 #### Postman Request Detayları:
-##### airlinecompanies_create -> Havayolu şirketi ekler.
+1. airlinecompanies_create -> Havayolu şirketi ekler.
+2. airlinecompanies_retrieveAllAirlineCompanies -> Havayolu sorgular.
+3. airports_create -> Havaalanı ekler.
+4. airports_retrieveAllAirports -> Havaalanı sorgular.
+5. airlinecompanies_create -> Havayolu şirketi ekler.
+6. airlinecompanies_create -> Havayolu şirketi ekler.
+
 
 Technologies: Java 8 and Spring Boot 2.3.5
 
