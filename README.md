@@ -27,9 +27,5 @@ Yukarıdaki link ile Postman'a resquest ve response import edilebilir.
 15. tickets_retrieveAllTickets -> Tüm biletleri sorgular.
 16. tickets_retrieveTicketByNumber -> Bilet numarasına göre sorgulama yapar.
 
-
-
 ### Test Data (H2 Database uygulama başladığında data.sql dosyasındaki data ile dolar.)
 ![image](https://github.com/yunussezgin/flight-booking/blob/master/src/main/resources/flight_booking_data.JPG?raw=true)
-
-
