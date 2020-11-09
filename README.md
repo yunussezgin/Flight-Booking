@@ -1,5 +1,7 @@
 ## Flight Booking
 
+Technologies: Java 8 and Spring Boot 2.3.5
+
 #### Service Postman Collection: https://www.getpostman.com/collections/82058ae5aacb40eae707
 
 Yukarıdaki link ile Postman'a resquest ve response import edilebilir.
@@ -25,8 +27,6 @@ Yukarıdaki link ile Postman'a resquest ve response import edilebilir.
 15. tickets_retrieveAllTickets -> Tüm biletleri sorgular.
 16. tickets_retrieveTicketByNumber -> Bilet numarasına göre sorgulama yapar.
 
-
-Technologies: Java 8 and Spring Boot 2.3.5
 
 
 ### Test Data (H2 Database uygulama başladığında data.sql dosyasındaki data ile dolar.)
