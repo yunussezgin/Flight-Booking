@@ -20,6 +20,6 @@ Technologies: Java 8 and Spring Boot 2.3.5
 
 
 ### Test Data (H2 Database uygulama başladığında aşağıdaki temp data ile dolar.)
-![image](https://github.com/yunussezgin/flight-booking/blob/master/src/main/resources/postman_collections.JPG?raw=true)
+![image](https://github.com/yunussezgin/flight-booking/blob/master/src/main/resources/flight_booking_data.JPG?raw=true)
 
 
