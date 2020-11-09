@@ -32,7 +32,7 @@ public class TicketController {
 	}
 
 	@GetMapping("/tickets/findbynumber/{number}")
-	public Ticket retrieveTicketByName(@PathVariable String number) {
+	public Ticket retrieveTicketByNumber(@PathVariable String number) {
 		return ticketRepository.findByNumber(number);
 	}
 
