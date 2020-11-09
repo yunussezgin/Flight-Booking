@@ -36,7 +36,7 @@ public class AirlineRouteController {
 	}
 
 	@GetMapping("/airlineroutes/{id}")
-	public Optional<AirlineRoute> retrieveAirlineroute(@PathVariable Long id) {
+	public Optional<AirlineRoute> retrieveAirlineRoute(@PathVariable Long id) {
 		return airlineRouteRepository.findById(id);
 	}
 
